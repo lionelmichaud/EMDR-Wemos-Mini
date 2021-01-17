@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-11-24T21:02:54Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "WLED_Wemos_shield-v1.51"
+        },
+        "Owner": "Serg74 Serg74 <serg74@hotmail.com>",
+        "Size": {
+            "X": 61.27,
+            "Y": 46.27
+        }
+    }
+}

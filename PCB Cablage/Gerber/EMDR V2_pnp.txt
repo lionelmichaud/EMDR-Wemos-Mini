@@ -1,0 +1,53 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=EMDR V2
+*Date=19:13:13
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;28.7299;-5.55693;0;Top;Pad2
+2;;;17.2999;-3.01693;0;Bottom;Hole2
+3;4.7k;THT;42.6999;-54.1344;90;Bottom;R3
+4;1mF;300 mil [THT, electrolytic];50.3199;-9.36693;-90;Bottom;C1
+5;;;10.9499;-44.9269;0;Top;Pad3
+6;;ptc;17.2999;-16.9869;180;Bottom;F2
+7;;THT;2.05994;-50.0069;0;Bottom;R1
+8;;;50.4678;-52.4011;0;Bottom;TXT1
+9;10k;THT;7.13994;-34.7669;90;Bottom;R5
+10;;;1.91379;-41.5771;0;Bottom;TXT1
+11;;;75.4099;-26.079;0;Bottom;TXT1
+12;68;THT;37.6199;-22.0669;0;Bottom;R1
+13;;;58.8876;-1.80027;0;Bottom;TXT1
+14;;;50.6053;-49.6957;0;Bottom;TXT1
+15;;power_jack_slot;7.26914;-8.21113;90;Bottom;J1
+16;;;8.40994;-58.8969;0;Bottom;Hole1
+17;;;58.4794;-25.8769;0;Bottom;TXT1
+18;;Breakout board;24.8782;-38.5723;0;Bottom;LLC1
+19;;ptc;19.8399;-10.6369;180;Bottom;F1
+20;;THT;46.5099;-53.8169;0;Bottom;J3
+21;;THT;70.7669;-5.81093;90;Bottom;J2
+22;;THT;66.7029;-21.8129;-90;Bottom;J4
+23;4.7k;THT;40.1599;-50.0069;90;Bottom;R2
+24;10k;THT;4.59994;-34.7669;90;Bottom;R4
+25;;;82.0699;-5.55693;0;Bottom;Hole3
+26;;;8.7449;-2.24078;0;Bottom;TXT1
+27;;;81.4496;-2.20921;0;Bottom;TXT1
+28;;;82.0699;-58.8969;0;Bottom;Hole4
+29;;;14.4122;-13.5125;0;Bottom;TXT1
+30;;;49.9198;-55.1034;0;Bottom;TXT1
+31;;;7.45207;-49.7835;0;Bottom;TXT1
+32;;;50.3668;-57.5511;0;Bottom;TXT1
+33;;tactile_switch_tall;46.6749;-40.8269;180;Top;S1
+34;;;2.68263;-57.9263;0;Bottom;TXT1
+35;;;26.1896;-42.7141;0;Bottom;WeMos D1 Mini1
+36;;dipswitch-02;7.13994;-20.7969;0;Bottom;SW1
+37;;;66.8296;-47.7941;0;Bottom;WeMos D1 Mini2
+38;;;80.7999;-16.9869;0;Top;Pad1
