@@ -10,13 +10,36 @@
 #include <NeoPixelBus.h>
 #include <NeoPixelAnimator.h>
 
-const uint16_t PixelCount = 16; // make sure to set this to the number of pixels in your strip
+const uint16_t PixelCount = 60; // make sure to set this to the number of pixels in your strip
 const uint8_t PixelPin = 2;  // make sure to set this to the correct pin, ignored for Esp8266
 const RgbColor CylonEyeColor(HtmlColor(0x7f0000));
 
-NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
+//NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount, PixelPin);
 // for esp8266 omit the pin
-//NeoPixelBus<NeoGrbFeature, Neo800KbpsMethod> strip(PixelCount);
+// For Esp8266, the Pin is omitted and it uses GPIO3 due to DMA hardware use.  
+// There are other Esp8266 alternative methods that provide more pin options, but also have
+// other side effects.
+// for details see wiki linked here https://github.com/Makuna/NeoPixelBus/wiki/ESP8266-NeoMethods 
+
+// You can also use one of these for Esp8266, 
+// each having their own restrictions
+//
+// These two are the same as above as the DMA method is the default
+// NOTE: These will ignore the PIN and use GPI03 pin
+//NeoPixelBus<NeoGrbFeature, NeoEsp8266Dma800KbpsMethod> strip(PixelCount, PixelPin);
+//NeoPixelBus<NeoRgbFeature, NeoEsp8266Dma400KbpsMethod> strip(PixelCount, PixelPin);
+
+// Uart method is good for the Esp-01 or other pin restricted modules
+// for details see wiki linked here https://github.com/Makuna/NeoPixelBus/wiki/ESP8266-NeoMethods 
+// NOTE: These will ignore the PIN and use GPI02 pin
+//NeoPixelBus<NeoGrbFeature, NeoEsp8266Uart1800KbpsMethod> strip(PixelCount, PixelPin);
+//NeoPixelBus<NeoRgbFeature, NeoEsp8266Uart1400KbpsMethod> strip(PixelCount, PixelPin);
+
+// The bitbang method is really only good if you are not using WiFi features of the ESP
+// It works with all but pin 16
+//NeoPixelBus<NeoGrbFeature, NeoEsp8266BitBang800KbpsMethod> strip(PixelCount, PixelPin);
+//NeoPixelBus<NeoRgbFeature, NeoEsp8266BitBang400KbpsMethod> strip(PixelCount, PixelPin);
+NeoPixelBus<NeoGrbFeature, NeoEsp8266Uart1800KbpsMethod> strip(PixelCount);
 
 NeoPixelAnimator animations(2); // only ever need 2 animations
 
